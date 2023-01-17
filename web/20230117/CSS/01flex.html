@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flex-wrapper {
+        display: flex;
+        height: 200px;
+      }
+      div {
+        border: 1px solid black;
+      }
+      .a {
+        flex: 1;
+      }
+      .b {
+        flex: 3;
+      }
+      .c {
+        flex: 1;
+      }
+      .box1-wrapper {
+        display: flex;
+        flex-wrap: wrap; /* 컨테이너가 한줄에 담을 여유가 없을때 아이템에 대한 줄바꿈을 결정*/
+        height: 300px;
+      }
+
+      .box1 {
+        width: 80px;
+        height: 80px;
+        border: 1px solid blue;
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-wrapper">
+      <div class="a">a</div>
+      <div class="b">b</div>
+      <div class="c">c</div>
+    </div>
+
+    <div class="box1-wrapper">
+      <div class="box1">test</div>
+      <div class="box1">test</div>
+      <div class="box1">test</div>
+      <div class="box1">test</div>
+      <div class="box1">test</div>
+      <div class="box1">test</div>
+      <div class="box1">test</div>
+      <div class="box1">test</div>
+      <div class="box1">test</div>
+      <div class="box1">test</div>
+      <div class="box1">test</div>
+      <div class="box1">test</div>
+      <div class="box1">test</div>
+      <div class="box1">test</div>
+      <div class="box1">test</div>
+      <div class="box1">test</div>
+      <div class="box1">test</div>
+      <div class="box1">test</div>
+      <div class="box1">test</div>
+      <div class="box1">test</div>
+    </div>
+  </body>
+</html>
