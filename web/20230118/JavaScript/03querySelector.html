@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h1>안녕 나는 자룡이</h1>
+    <div class="container">
+      <div class="img-wrapper">
+        <img src="./jony.jpg" alt="자룡이" height = "300"/>
+      </div>
+      <div class="hobby-list">
+        <h2>취미목록</h2>
+        <ul>
+          <li>영화보기</li>
+          <li>코딩하기</li>
+          <li>산책가기</li>
+          <li>게임하기</li>
+          <li>등산가기</li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      // const img = document.querySelector("body > div > div.img-wrapper > img");
+      // 경로를 따라가서 선택자 기준 정하기(축약 가능)
+      /* const img = document.querySelector(".img-wrapper > img");
+      console.log(img); */
+    
+      const imgwrapper = document.querySelector(".img-wrapper");
+      const img = imgwrapper.querySelector("img");
+      console.log(img);
+
+      const li = document.querySelectorAll(".hobby-list > ul > li"); // .hobby-list li로 중간을 건너뛰고 접근 가능
+      console.log(li);
+      li[0].textContent = "싸피";
+
+    </script>
+  </body>
+</html>

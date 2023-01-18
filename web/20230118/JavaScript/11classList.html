@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .font-red {
+      color: red;
+    }
+    .font-blue {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1>HI</h1>
+  <button class="red-button">빨간색으로 만들자</button>
+  <button class="black-button">까만색으로 만들자</button>
+  <button class="black-red">까망 빨강</button>
+  <button class="is-red">빨강이 있느냐!</button>
+  <button class="red-to-blue">빨강을 파랑으로</button>
+  <script>
+    const h1 = document.querySelector("h1");
+    const redBtn = document.querySelector(".red-button");
+    const blackBtn = document.querySelector(".black-button");
+    const bRBtn = document.querySelector(".black-red");
+    const isRed = document.querySelector(".is-red");
+    const redToblue = document.querySelector(".red-to-blue");
+    redBtn.addEventListener("click", function() {
+      h1.classList.add("font-red"); // 태그에 속성 넣기(있으면 무시)
+    })
+    blackBtn.addEventListener("click", function() {
+      h1.classList.remove("font-red"); // 태그에 속성 삭제(없으면 무시)
+    })
+    bRBtn.addEventListener("click", function() {
+      h1.classList.toggle("font-red"); // 태그에 속성 토글
+    })
+    isRed.addEventListener("click", function() {
+      const flag = h1.classList.contains("font-red");
+      console.log(flag); // 태그에 속성이 있느냐 없느냐
+    })
+    redToblue.addEventListener("click", function() {
+      h1.classList.replace("font-red", "font-blue"); // 태그의 속성을 변경
+    })
+  </script>
+</body>
+</html>

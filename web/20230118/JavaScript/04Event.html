@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>이벤트</h1>
+    <!-- <button onclick="showMessage()">나를 클릭해</button> : inLine 방식 -->
+    <button>나를 클릭해</button>
+  <script>
+    function showMessage() {
+      console.log("안녕!!");
+    }
+    function showMessage2() {
+      console.log("즐겁다");
+    }
+    // addEventListener(이벤트의 종류, 실행할 함수 이름 or function(){}) -> 하나의 event에 여러 동작 발생 가능
+    const btn = document.querySelector("button"); // 꼭 button이 아니어도 됨 ex) div도 가능
+    btn.addEventListener("click", showMessage);
+    btn.addEventListener("click", showMessage2);
+  </script>
+</body>
+</html>
