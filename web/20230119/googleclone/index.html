@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <nav class="header-nav">
+      <ul class="header-nav-list-wrapper">
+        <li>Gmail</li>
+        <li>이미지</li>
+        <li>
+          <button class="toggle-button">
+            일반 모드
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- main -->
+  <main class="main-container">
+    <!-- 로고 파트 -->
+    <h1>
+      <img class="image-logo" src="./logo.png" alt="구글 로고">
+    </h1>
+    <!-- 검색 파트 -->
+    <div class="search-container">
+      <input id="search-input" placeholder="Google 검색 또는 URL 입력">
+      <img class="search-icon" src="./search.png">
+    </div>
+    <!-- 아이콘 파트 -->
+    <section class="bookmark-section">
+      <div class="bookmark-wrapper">
+        <a href="https://www.naver.com" class="bookmark-item">
+          <div class="img-icon-wrapper">
+            <img src="./naver.png">
+          </div>
+          <div class="bookmark-text">naver</div>
+        </a>
+        <a href="https://www.daum.net" class="bookmark-item">
+          <div class="img-icon-wrapper">
+            <img src="./daum.png">
+          </div>
+          <div class="bookmark-text">daum</div>
+        </a>
+        <a href="https://www.kakaocorp.com" class="bookmark-item">
+          <div class="img-icon-wrapper">
+            <img src="./kakao.png">
+          </div>
+          <div class="bookmark-text">kakao</div>
+        </a>
+        <a href="https://www.samsung.com" class="bookmark-item">
+          <div class="img-icon-wrapper">
+            <img src="./samsung.png">
+          </div>
+          <div class="bookmark-text">samsung</div>
+        </a>
+        <a href="https://www.ssafy.com" class="bookmark-item">
+          <div class="img-icon-wrapper">
+            <img src="./ssafy.png">
+          </div>
+          <div class="bookmark-text">ssafy</div>
+        </a>
+        <a href="https://zum.com" class="bookmark-item">
+          <div class="img-icon-wrapper">
+            <img src="./zum.png">
+          </div>
+          <div class="bookmark-text">zum</div>
+        </a>
+        <a href="" class="bookmark-item">
+          <div class="img-icon-wrapper">
+            <img src="./plus.png">
+          </div>
+          <div class="bookmark-text">더보기</div>
+        </a>
+      </div>
+    </section>
+  </main>
+  <script src="./index.js"></script>
+</body>
+</html>

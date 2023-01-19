@@ -1,0 +1,24 @@
+이미지 넣는 방법
+1. 백그라운드 이미지
+2. 이미지 태그
+경로 : 절대경로(최상위를 기준), 상대경로(작업하는 파일 기준 -> 추천)
+
+각각의 태그 사용법 익히기
+
+CSS 적용법 : inline 방식(비추), 헤드에서 스타일 태그, CSS파일 링크(추천)
+
+선택자 종류 : 태그, 클래스(.), 아이디(#)
+
+display 종류 : block(차지하는 영역, 조절 가능 ex) div, h1), inline(조절 불가능ex) span, input), none
+
+position : 배치 옮길 때, relative(부모를 기준), absolute(static이 아닌 부모를 기준), fixed(고정)
+
+flex : 정렬할 때 사용, 레이아웃 연습 필요
+
+object 접근 방법 연습
+
+Event 사용법 연습
+
+textContent는 태그에 들어있는 값, value는 input의 값
+
+태그 만들때 create eliment
