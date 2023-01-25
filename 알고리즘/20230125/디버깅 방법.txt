@@ -1,0 +1,10 @@
+1단계
+F10 : Step over
+ctrl + F10 : 커서까지 Step over
+shift + F5 : 바로 종료
+F11 : Step into
+2단계
+F9 : Breakpoint 이후
+F5 : Run(Breakpoint에서 멈춤)
+조사식
+메뉴 : (디버그 > 창 > 조사식 > 조사식1) 누르면 나옴
