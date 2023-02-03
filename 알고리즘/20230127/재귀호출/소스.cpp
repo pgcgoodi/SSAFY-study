@@ -150,7 +150,7 @@ int main()
 	return 0;
 }*/
 
-/* 조합
+//조합
 #include <iostream>
 
 using namespace std;
@@ -176,7 +176,7 @@ int main()
 {
 	func(0, 1);
 	return 0;
-}*/
+}
 
 /* 중복 순열
 #include <iostream>
