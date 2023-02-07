@@ -21,4 +21,4 @@ Event 사용법 연습
 
 textContent는 태그에 들어있는 값, value는 input의 값
 
-태그 만들때 create eliment
+태그 만들때 create element
