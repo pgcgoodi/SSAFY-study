@@ -1,0 +1,6 @@
+mysql -u username -p
+show databases;
+use 데이터베이스 이름;
+show tables;
+SELECT * FROM 테이블 이름;
+desc 테이블 이름; : 테이블의 필드(컬럼) 
