@@ -23,5 +23,5 @@ const chicken = {
 };
 
 const {type, ...another} = chicken;
-console.log(type, anoter);
+console.log(type, another);
 // 객체의 나머지를 rest에 담기 

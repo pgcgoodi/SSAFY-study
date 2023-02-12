@@ -14,7 +14,7 @@ const sampleFunc = function() {}; ===  const sampleFunc = () => {};
 document.querySelector("");
 비슷한거 getElementById(), getElementByClassName()
 11. 이벤트 방식 : addEventListner, 인라인 이벤트 방식
-12. classList의 종류
+12. classList의 종류(add, remove, toggle, contains, replace)
 13. 콜백함수 : 함수 안에 들어가는 함수 원형, 이벤트에 적용
 14. slice, splice
 15. 파싱에서 중요한 것 : forEach, map, filter, reduce(array loop method)
