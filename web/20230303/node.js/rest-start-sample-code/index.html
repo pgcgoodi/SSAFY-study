@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+      <div>
+        <label for="menu_name">메뉴 이름</label>
+        <input id="menu_name">
+      </div>
+      <div>
+        <label for="menu_description">메뉴 설명</label>
+        <input id="menu_description">
+      </div>
+      <div>
+        <label for="menu_img_link">메뉴 이미지</label>
+        <input id="menu_img_link">
+      </div>
+      <div>
+        <button>메뉴 등록</button>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.3.4/dist/axios.min.js"></script>
+    <script>
+      const button = document.querySelector("button");
+      button.addEventListener("click", async function(){
+        const menu_name = document.querySelector("#menu_name").value;
+        const menu_description = document.querySelector("#menu_description").value;
+        const menu_img_link = document.querySelector("#menu_img_link").value;
+        const result = await axios.post("http://localhost:8080/api/menus", {
+          menu_name: menu_name,
+          menu_description: menu_description,
+          menu_img_link: menu_img_link
+        })
+      })
+      // get test
+      async function getTest() {
+        const result = await axios.get("http://localhost:8080/api/menus");
+        console.log(result);
+      }
+      getTest();
+      // post test
+      async function getPostTest() {
+        const result = await axios.post("http://localhost:8080/api/menus");
+        console.log(result);
+      }
+      getPostTest();
+    </script>
+  </body>
+</html>
