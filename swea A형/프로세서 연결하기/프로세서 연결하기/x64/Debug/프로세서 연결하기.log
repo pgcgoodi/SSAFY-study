@@ -1,0 +1,5 @@
+﻿  소스.cpp
+C:\Users\geunchang park\source\repos\프로세서 연결하기\프로세서 연결하기\소스.cpp(171,18): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\geunchang park\source\repos\프로세서 연결하기\프로세서 연결하기\소스.cpp(172,11): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\geunchang park\source\repos\프로세서 연결하기\프로세서 연결하기\소스.cpp(173,10): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  프로세서 연결하기.vcxproj -> C:\Users\geunchang park\source\repos\프로세서 연결하기\x64\Debug\프로세서 연결하기.exe
