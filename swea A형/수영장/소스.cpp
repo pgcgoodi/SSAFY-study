@@ -29,16 +29,28 @@ void dfs(int now, int sum) {
 		if (i == 0)
 		{
 			int temp = plan[now] * cost[i];
+			if (sum + temp > mini)
+			{
+				continue;
+			}
 			dfs(now + 1, sum + temp);
 		}
 		if (i == 1)
 		{
 			int temp = cost[i];
+			if (sum + temp > mini)
+			{
+				continue;
+			}
 			dfs(now + 1, sum + temp);
 		}
 		if (i == 2)
 		{
 			int temp = cost[i];
+			if (sum + temp > mini)
+			{
+				continue;
+			}
 			dfs(now + 3, sum + temp);
 		}
 	}

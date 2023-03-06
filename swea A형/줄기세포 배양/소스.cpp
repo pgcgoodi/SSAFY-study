@@ -74,12 +74,6 @@ int main()
 			{
 				cin >> map[i][j];
 				map[i][j] = map[i][j] * 2;
-			}
-		}
-		for (int i = 150; i < 150 + n; i++)
-		{
-			for (int j = 150; j < 150 + m; j++)
-			{
 				if (map[i][j] != 0)
 				{
 					mapcpy[i][j] = map[i][j];
@@ -89,6 +83,7 @@ int main()
 		}
 		while (k > 0)
 		{
+			int cnt = 0;
 			for (int i = 0; i < 360; i++)
 			{
 				for (int j = 0; j < 360; j++)
