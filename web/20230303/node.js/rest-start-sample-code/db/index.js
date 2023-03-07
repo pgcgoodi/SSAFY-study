@@ -2,7 +2,7 @@ const mysql = require("mysql2/promise");
 
 const pool = mysql.createPool({
     // aws ip
-    host: "15.164.211.53",
+    host: "43.201.27.209",
     // mysql username
     user: "ssafy",
     // mysql user password
