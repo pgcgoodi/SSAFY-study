@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <div v-if="first">a</div>
+    <div v-if="first">b</div>
+    <div v-if="first">c</div>
+    <div v-if="second">d</div>
+    <div v-if="second">e</div>
+    <div v-if="third">f</div>
+    <div v-if="third">g</div>
+    <button v-on:click="show">go</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.min.js"></script>
+  <script>
+    const app = new Vue({
+      el: "#app",
+      data(){
+        return{
+          first: true,
+          second: false,
+          third: false
+        };
+      },
+      methods: {
+        show() {
+          if(this.first){
+            this.first = false,
+            this.second = true,
+            this.third = false
+          }
+          else if(this.second){
+            this.first = false,
+            this.second = false,
+            this.third = true
+          }
+          else if(this.third){
+            this.first = true,
+            this.second = false,
+            this.third = false
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
