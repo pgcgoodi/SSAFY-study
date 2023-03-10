@@ -1,0 +1,9 @@
+{"level":"error","message":"error 메세지"}
+{"level":"warn","message":"warn 메세지"}
+{"level":"info","message":"info 메세지"}
+{"level":"error","message":"error 메세지","timestamp":"2023-03-10T02:36:35.992Z"}
+{"level":"warn","message":"warn 메세지","timestamp":"2023-03-10T02:36:35.993Z"}
+{"level":"info","message":"info 메세지","timestamp":"2023-03-10T02:36:35.993Z"}
+{"level":"error","message":"error 메세지","timestamp":"2023-03-10 11:40:03"}
+{"level":"warn","message":"warn 메세지","timestamp":"2023-03-10 11:40:03"}
+{"level":"info","message":"info 메세지","timestamp":"2023-03-10 11:40:03"}
