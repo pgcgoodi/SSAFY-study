@@ -1,0 +1,72 @@
+프론트 엔드 : 서버로부터 json형식의 데이터를 받음 
+(과거) 브라우저에서 동작하는 코드 구현, 서버 지식? (현재) 프론트엔드 서버도 알아야 함
+SSR(MPA) vs CSR(SPA) : 서버에서 만드냐(여러 개의 HTML) 클라이언트에서 만드냐(json 데이터, 하나의 HTML)
+SSR(MPA)
+	전통적
+	서버 사이드 렌더링
+	서버에서 화면을 만든다
+	클라이언트는 완성된 HTML을 서버로부터 받는다
+	서버로부터 계속 HTML을 요청
+	서버의 부하 큼
+	새로고침 발생
+	SEO 강함
+CSR(SPA)
+	현대적
+	클라이언트 사이드 렌더링
+	클라이언트에서 화면을 만든다
+	클라이언트는 최소한 HTML을 받은 후 서버로부터 데이터 받아서 HTML 변경
+	최초에 한 번 하나의 HTML을 서버로부터 받은 후 더이상 요청 X
+	서버의 부하 작음
+	새로고침 X
+	SEO 약함
+SPA Framewaork : Anguar, React(o), Vue(o), Svelte
+SPA를 구현하려면 꼭 프레임워크를 써야 할까 ㄴㄴ 프레임워크는 편하게 하려고 적용
+Vue 특징
+  JS보다 쉬운 화면 조작
+    v-if, v-for ...
+  Virtual DOM 사용 (가상돔) -> DOM 안의 요소들이 많아지면 핸들링 어려움
+  컴포넌트
+  progressive JavaScript Framework
+  SPA(CSR) 서버 부담을 덜어줌
+변경 사항이 많은 페이지에서는 Virtual DOM이 유리함
+컴포넌트 : 화면의 각 부분을 나눠 조립식으로 개발, 재사용성 증가, 유지보수 용이
+MVVM 패턴
+  vue의 패턴
+  model, viewmodel, view(쉽게 생각하면 view는 화면, model은 서버)
+  view에서 입력받음, model에 데이터 저장
+  vue는 중간에 있는 viewmodel에서 담당
+  view에서 이벤트 => viewmodel의 콜백함수를 호출
+  viewmodel 데이터 변경 => view, model 즉시 변경
+  view와 model 사이 의존성 제거
+data : vue instance에서 변수 생성 시 사용
+methods : vue instance에서 메서드 생성 시 사용
+바인딩
+  단방향 : {{}}(화면 출력), v-bind(태그의 속성 변경, props, 축약은 :)
+  양방향 : v-model(input)
+v-on : 이벤트 받을 때 사용, 축약은 @
+v-if : true일 때 출력
+v-for : 반복, 반드시 key 필요
+vue-CLI
+  vue 프로젝트 생성 시 사용
+  vuex, vue-router 등 추가 가능
+  vue create .
+vue router
+  서드 파티 라이브러리
+  라우터에 컴포넌트 매핑
+  어떤 url에서 렌더링할지 결정
+props
+  부모 컴포넌트 -> 자식 컴포넌트로 데이터 전달
+  v-bind
+  자식에서 받을 때 props: []
+emit
+  자식 컴포넌트에서 부모 컴포넌트로 이벤트 전달
+  v-on
+vuex
+  상태(state) 관리 패턴 + 라이브러리
+  모든 컴포넌트의 중앙 저장소
+  props/emit 의 반복 사용으로, 데이터 관리 힘들어서 사용
+  props/emit과 동시 사용 가능
+  state 변경 시 mutations
+Bootstrap Vue
+  컴포넌트 방식으로 Bootstrap 사용
+  bootstrap-vue, bootstrap 둘 다 npm 사용해 설치
